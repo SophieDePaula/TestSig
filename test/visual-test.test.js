@@ -68,7 +68,7 @@ describe('DemoApp - Ultrafast Grid', function () {
 
     // process.exit(1)
     console.log(`**** after check *****`)
-    await new Promise(r => setTimeout(r, 60000))
+    await new Promise(r => setTimeout(r, 30000))
 
     // Call Close on eyes to let the server know it should display the results
     await eyes.close();
