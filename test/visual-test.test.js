@@ -2,7 +2,7 @@
 
 const { Builder, By } = require('selenium-webdriver');
 const { Options } = require('selenium-webdriver/chrome')
-const { Eyes, VisualGridRunner, RunnerOptions, Target, RectangleSize, Configuration, BatchInfo, BrowserType, DeviceName, ScreenOrientation} = require('@applitools/eyes-selenium');
+const { Eyes, VisualGridRunner, RunnerOptions, Target, RectangleSize, Configuration, BatchInfo, BrowserType} = require('@applitools/eyes-selenium');
 let runner, eyes, driver;
 const events = ['SIGTERM', 'SIGINT', 'beforeExit', 'rejectionHandled', 'uncaughtException', 'exit', 'SIGBREAK'];
 
