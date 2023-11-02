@@ -66,8 +66,9 @@ describe('DemoApp - Ultrafast Grid', function () {
     // https://applitools.com/docs/topics/sdk/the-eyes-sdk-check-fluent-api.html
     await eyes.check("Login Window", Target.window().fully());
 
-    process.exit(1)
-    await new Promise(r => setTimeout(r, 3000))
+    // process.exit(1)
+    console.log(`**** after check *****`)
+    await new Promise(r => setTimeout(r, 60000))
 
     // Call Close on eyes to let the server know it should display the results
     await eyes.close();
