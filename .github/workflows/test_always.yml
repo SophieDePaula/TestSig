@@ -22,6 +22,7 @@ jobs:
   
     - name: Run Tests
       run: npm run test
+      if: always()
 
 env:
   APPLITOOLS_API_KEY: ${{secrets.APPLITOOLS_API_KEY}}
