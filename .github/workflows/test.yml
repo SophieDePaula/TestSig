@@ -23,5 +23,9 @@ jobs:
     - name: Run Tests
       run: npm run test
 
+    - name: Cleanup
+      run: npm run cleanup
+      if: ${{ cancelled() }} 
+      
 env:
   APPLITOOLS_API_KEY: ${{secrets.APPLITOOLS_API_KEY}}
