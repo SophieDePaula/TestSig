@@ -44,7 +44,7 @@ describe('DemoApp - Ultrafast Grid', function () {
 
     // Add browsers with different viewports
     conf.addBrowser(800, 600, BrowserType.CHROME);
-    conf.addBrowser(700, 500, BrowserType.FIREFOX);
+    conf.addBrowser(700, 600, BrowserType.FIREFOX);
 
     // set the configuration to eyes
     eyes.setConfiguration(conf)
